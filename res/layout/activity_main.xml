@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+  
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira seu nome para eu tentar advinhar(Ficarei de olhos fechados): "/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:inputType="text"
+        android:hint="Nome"
+        android:maxLength="20"
+        android:textSize="28sp"
+        android:text="" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu nome: "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvResultado"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#cdcdcd"
+        android:typeface="monospace"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btAdvinhar"
+        android:text="Advinhar"
+        android:enabled="true"
+        android:onClick="btAdvinharOnClick"
+        android:background="#003775"
+        />
+
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btSair"
+        android:text="Sair"
+        android:enabled="true"
+        android:onClick="btSairOnClick"
+        android:background="#c63637"
+         />
+    </LinearLayout>
+
+</LinearLayout>
